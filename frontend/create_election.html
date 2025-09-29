@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Create Election</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Admin Panel</h1>
+    <div class="navbar-links">
+      <a href="admin_dashboard.html">Dashboard</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <div class="center">
+    <h2>Create Election</h2>
+    <form id="createElectionForm">
+      <input type="text" id="title" placeholder="Election Title" required><br>
+      <textarea id="description" placeholder="Election Description" required></textarea><br>
+      <button type="submit">Create</button>
+    </form>
+  </div>
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Election Results</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Admin Panel</h1>
+    <div class="navbar-links">
+      <a href="admin_dashboard.html">Dashboard</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+  <div class="center">
+    <h2>View Results</h2>
+    <select id="electionId">
+      <option value="">Select Election</option>
+    </select>
+    <button id="showResults">Show Results</button>
+    <div id="results-container">
+      <canvas id="resultsChart"></canvas>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
